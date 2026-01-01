@@ -1,0 +1,21 @@
+{
+  "user_id": "U001",
+  "purchases": [
+    {
+      "product_id": "라네즈 워터뱅크 블루 히알루로닉 클렌징 오일 250ml",
+      "category": "클렌징",
+      "price_original": 28000,
+      "discount_rate": 0.3,
+      "price_paid": 19600,
+      "purchase_date": "2024-11-12"
+    },
+    {
+      "product_id": "토리든 다이브인 저분자 히알루론산 세럼",
+      "category": "토너",
+      "price_original": 24000,
+      "discount_rate": 0.0,
+      "price_paid": 24000,
+      "purchase_date": "2024-12-03"
+    }
+  ]
+}
