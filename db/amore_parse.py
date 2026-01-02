@@ -3,63 +3,120 @@ import os
 import re
 
 
-TXT_DIR = "아모레퍼시픽 txt 데이터베이스"
-JSON_DIR = "아모레퍼시픽 json 데이터베이스"
+TXT_DIR = "db/리뷰 txt/"
+JSON_DIR = "db/리뷰 json/"
 
-# 처리할 제품명
-TARGET_PRODUCT_NAME = "[설화수] NEW 자음생클렌징폼 150g"
 
 REVIEW_SPLITTER = "\n\n\n\n\n"
+'''
+TARGET_PRODUCT_NAME = "루즈 클래시 3.5g"
+RATING_KEYS = ["제형", "지속력", "발색감","피부톤"]
 
-RATING_KEYS = ["세정력", "촉촉함", "민감성"]
+TARGET_PRODUCT_NAME = "UV프로텍터 톤업 SPF50+PA++++ 50ml"
+RATING_KEYS = ["사용성", "민감성", "발림성"]
 
-RATING_VALUE_MAP = {
-    "세정력": {
-        "잘 지워져요": "good",
-        "적당해요": "neutral",
-        "잔여감 있어요": "bad"
-    },
-    "촉촉함": {
-        "촉촉해요": "good",
-        "적당해요": "neutral",
-        "당겨요": "bad"
-    },
-    "민감성": {
-        "순해요": "good",
-        "적당해요": "neutral",
-        "자극적이에요": "bad"
-    }
-}
+TARGET_PRODUCT_NAME = "[듀오] NEW 블랙 쿠션 파운데이션 SPF34PA++ (본품15g+리필15g)"
+RATING_KEYS = ["커버력", "지속력", "피부 표현", "피부톤"]
 
+TARGET_PRODUCT_NAME = "자연을 닮은 립밤"
+RATING_KEYS = ["지속력", "유분기", "촉촉함"]
+
+TARGET_PRODUCT_NAME = "랩핑 마스크 기획세트 4매 (+1매 증정)"
+RATING_KEYS = ["보습감", "향", "민감성"]
+
+TARGET_PRODUCT_NAME = "세라마이드 아토 6.0 탑투토워시 500ml"
+RATING_KEYS = ["용량", "민감성", "향기"]
+
+TARGET_PRODUCT_NAME = "NEW [대용량] 세라마이드 아토 로션 564ml"
+RATING_KEYS = ["용량", "민감성", "향기"]
+
+TARGET_PRODUCT_NAME = "노세범 미네랄 파우더 5g"
+RATING_KEYS = ["커버력", "지속력", "피부 표현", "피부톤"]
+
+TARGET_PRODUCT_NAME = "아이 코어 팔레트 9g"
+RATING_KEYS = ["발색감", "지속력", "사용감"]
+
+TARGET_PRODUCT_NAME = "[2개이상구매시10%추가할인][NEW] 왓츠 인 마이 아이즈"
+RATING_KEYS = ["발색감", "지속력", "사용감"]
+
+TARGET_PRODUCT_NAME = ""
+RATING_KEYS = ["", "", ""]
+
+TARGET_PRODUCT_NAME = ""
+RATING_KEYS = ["", "", ""]
+
+TARGET_PRODUCT_NAME = ""
+RATING_KEYS = ["", "", ""]
+
+TARGET_PRODUCT_NAME = ""
+RATING_KEYS = ["", "", ""]
+
+TARGET_PRODUCT_NAME = ""
+RATING_KEYS = ["", "", ""]
+
+TARGET_PRODUCT_NAME = ""
+RATING_KEYS = ["", "", ""]
+
+TARGET_PRODUCT_NAME = ""
+RATING_KEYS = ["", "", ""]
+
+TARGET_PRODUCT_NAME = "[도넛립세럼] 글레이즈 크레이즈 틴티드 립 세럼 (8종) 12g"
+RATING_KEYS = ["지속력", "유분기", "촉촉함"]
+
+'''
+
+TARGET_PRODUCT_NAME = "[2개이상구매시10%추가할인][NEW] 왓츠 인 마이 아이즈"
+RATING_KEYS = ["발색감", "지속력", "사용감"]
 
 def extract_overall_rating_from_filename(filename: str):
     m = re.search(r"별점([1-5])", filename)
     return int(m.group(1)) if m else None
 
 
-def normalize_rating(key, value):
-    return RATING_VALUE_MAP.get(key, {}).get(value, "unknown")
-
-
 def parse_review_block(block: str, overall_rating: int):
     lines = [l.rstrip() for l in block.splitlines()]
 
-    if len(lines) < 10:
+    # 너무 짧으면 스킵
+    if len(lines) < 5:
         return None
+
+    # ─────────────────────────────
+    # 1) gender 줄 위치 찾기
+    # ─────────────────────────────
+    gender_idx = None
+    for i, line in enumerate(lines):
+        t = line.strip()
+        if t in ("여성", "남성"):
+            gender_idx = i
+            break
+
+    if gender_idx is None:
+        # gender 줄이 없으면 파싱하지 않음
+        return None
+
+    # ─────────────────────────────
+    # 2) gender 기준으로 주변 필드 추출
+    # ─────────────────────────────
+    age_group = lines[gender_idx - 1].strip() if gender_idx - 1 >= 0 else ""
+
+    skin_features = []
+    if gender_idx + 1 < len(lines):
+        skin_features.append(lines[gender_idx + 1].strip())
+    if gender_idx + 2 < len(lines):
+        skin_features.append(lines[gender_idx + 2].strip())
 
     result = {
         "overall_rating": overall_rating,
-        "age_group": lines[3].strip(),
-        "gender": lines[4].strip(),
-        "skin_features": [
-            lines[5].strip(),
-            lines[6].strip()
-        ],
-        "ratings_raw": {},
+        "age_group": age_group,
+        "gender": lines[gender_idx].strip(),
+        "skin_features": skin_features,
         "ratings_norm": {},
-        "review_text": ""
+        "review_text": "",
     }
 
+    # ─────────────────────────────
+    # 3) 나머지 평점 키 탐색 (기존 로직 그대로)
+    # ─────────────────────────────
     last_rating_value_idx = -1
     i = 0
 
@@ -67,8 +124,7 @@ def parse_review_block(block: str, overall_rating: int):
         key = lines[i].strip()
         if key in RATING_KEYS:
             value = lines[i + 1].strip()
-            result["ratings_raw"][key] = value
-            result["ratings_norm"][key] = normalize_rating(key, value)
+            result["ratings_norm"][key] = value
             last_rating_value_idx = i + 1
             i += 2
         else:
@@ -91,6 +147,7 @@ def parse_review_block(block: str, overall_rating: int):
     return result
 
 
+
 def main():
     os.makedirs(JSON_DIR, exist_ok=True)
 
@@ -103,9 +160,6 @@ def main():
         and f.startswith(TARGET_PRODUCT_NAME)
     ]
 
-    if not txt_files:
-        print(f"❌ '{TARGET_PRODUCT_NAME}'에 해당하는 txt 파일이 없습니다.")
-        return
 
     print(f"🔍 처리 대상 파일 ({len(txt_files)}개):")
     for f in sorted(txt_files):
@@ -122,7 +176,9 @@ def main():
 
         blocks = content.split(REVIEW_SPLITTER)
 
+
         for block in blocks:
+            block = block.strip()
             parsed = parse_review_block(block, overall_rating)
             if parsed:
                 collected_reviews.append(parsed)
