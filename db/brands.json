@@ -1,0 +1,16 @@
+[
+  {
+    "brand_id": "B001",
+    "brand_name": "라네즈",
+    "crm_tone": "감성적이고 친숙한 톤",
+    "crm_purpose": "피부 고민 해결과 효능 중심의 안내 메시지",
+    "product_ids": ["P001"]
+  },
+  {
+    "brand_id": "B002",
+    "brand_name": "이니스프리",
+    "crm_tone": "친근하고 일상적인 대화체",
+    "crm_purpose": "가성비와 생활 밀착형 피부케어 중심",
+    "product_ids": ["P002"]
+  }
+]

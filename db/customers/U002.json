@@ -1,0 +1,19 @@
+{
+  "user_id": "U002",
+  "user_name": "박고객",
+  "age_group": "20대",
+  "gender": "여성",
+  "skin_features": ["지성", "트러블"],
+
+  "purchases": [
+    {
+      "product_id": "P002",
+      "category": "토너",
+      "is_planning_product": false,
+      "price_original": 26000,
+      "discount_rate": 0.1,
+      "price_paid": 23400,
+      "purchase_date": "2024-10-21"
+    }
+  ]
+}

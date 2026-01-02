@@ -1,0 +1,21 @@
+{
+  "user_id": "U001",
+  "user_name": "김유저",
+  "age_group": "30대",
+  "gender": "여성",
+  "skin_features": ["복합성", "민감성"],
+  "pick_list": ["P002"],
+  "basket": [],
+  "purchases": [
+    {
+      "product_id": "P001",
+      "category": "클렌징",
+      "is_planning_product": true,
+      "price_original": 28000,
+      "discount_rate": 0.3,
+      "price_paid": 19600,
+      "purchase_date": "2024-11-12"
+    }
+    
+  ]
+}

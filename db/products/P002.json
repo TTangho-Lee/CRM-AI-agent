@@ -1,0 +1,30 @@
+{
+  "product_id": "P002",
+  "product_name": "라네즈 크림스킨 토너",
+  "brand_id": "B001",
+
+  "tags": ["토너", "보습", "민감성"],
+  "feature_prompt_text": "건조하고 민감한 피부를 촉촉하게 유지해주는 고보습 토너",
+
+  "is_planning_product": false,
+
+  "hwahae": {
+    "positive": { "촉촉한": 8123, "진정되는": 4412 },
+    "negative": { "답답한": 822 }
+  },
+
+  "reviews": [
+    {
+      "overall_rating": 5,
+      "age_group": "30대",
+      "gender": "여성",
+      "skin_features": ["건성", "민감성"],
+      "ratings_norm": { "보습력": "excellent", "자극도": "good" },
+      "review_text": "보습력 최고인데 무겁지 않아요"
+    }
+  ],
+
+  "price_original": 26000,
+  "discount_rate": 0.1,
+  "price_current": 23400
+}
