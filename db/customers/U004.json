@@ -1,0 +1,18 @@
+{
+    "user_id": "U004",
+    "user_name": "정혜숙",
+    "age_group": "50대",
+    "gender": "여성",
+    "skin_features": ["극건성", "주름", "탄력없음", "웜톤"],
+    "pick_list": ["P401"],
+    "basket": ["P402"],
+    "purchases": [
+      {
+        "product_id": "P404",
+        "category": "스킨케어",
+        "product_name": "설화수 윤조에센스 세트",
+        "price_paid": 119000,
+        "purchase_date": "2025-11-28"
+      }
+    ]
+  }

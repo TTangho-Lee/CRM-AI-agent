@@ -1,0 +1,18 @@
+{
+    "user_id": "U007",
+    "user_name": "Li Wei",
+    "age_group": "30대",
+    "gender": "여성",
+    "skin_features": ["건성", "탄력없음", "주름", "웜톤"],
+    "pick_list": ["P701"],
+    "basket": ["P703"],
+    "purchases": [
+      {
+        "product_id": "P704",
+        "category": "럭셔리케어",
+        "product_name": "설화수 진설 크림",
+        "price_paid": 494000,
+        "purchase_date": "2025-11-15"
+      }
+    ]
+  }

@@ -1,0 +1,18 @@
+{
+    "user_id": "U005",
+    "user_name": "Sarah",
+    "age_group": "20대",
+    "gender": "여성",
+    "skin_features": ["건성", "민감성", "칙칙함", "쿨톤"],
+    "pick_list": ["P501"],
+    "basket": ["P502"],
+    "purchases": [
+      {
+        "product_id": "P503",
+        "category": "스킨케어",
+        "product_name": "라네즈 립 슬리핑 마스크",
+        "price_paid": 24000,
+        "purchase_date": "2025-12-10"
+      }
+    ]
+  }

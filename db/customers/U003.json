@@ -1,0 +1,18 @@
+{
+    "user_id": "U003",
+    "user_name": "박진우",
+    "age_group": "30대",
+    "gender": "남성",
+    "skin_features": ["수분부족지성", "건조함", "트러블", "웜톤"],
+    "pick_list": ["P301"],
+    "basket": ["P302"],
+    "purchases": [
+      {
+        "product_id": "P303",
+        "category": "헤어케어",
+        "product_name": "라보에이치 탈모 샴푸",
+        "price_paid": 18000,
+        "purchase_date": "2025-12-05"
+      }
+    ]
+  }

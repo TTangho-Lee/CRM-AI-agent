@@ -1,19 +1,18 @@
 {
-  "user_id": "U002",
-  "user_name": "박고객",
-  "age_group": "20대",
-  "gender": "여성",
-  "skin_features": ["지성", "트러블"],
-
-  "purchases": [
-    {
-      "product_id": "P002",
-      "category": "토너",
-      "is_planning_product": false,
-      "price_original": 26000,
-      "discount_rate": 0.1,
-      "price_paid": 23400,
-      "purchase_date": "2024-10-21"
-    }
-  ]
-}
+    "user_id": "U002",
+    "user_name": "이서윤",
+    "age_group": "20대",
+    "gender": "여성",
+    "skin_features": ["복합성", "모공", "칙칙함", "웜톤"],
+    "pick_list": ["P201"],
+    "basket": [],
+    "purchases": [
+      {
+        "product_id": "P203",
+        "category": "메이크업",
+        "product_name": "헤라 블랙 쿠션",
+        "price_paid": 61200,
+        "purchase_date": "2025-12-15"
+      }
+    ]
+  }
