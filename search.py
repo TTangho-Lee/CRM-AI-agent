@@ -1,4 +1,5 @@
 from collections import defaultdict
+import random
 from score_calculation import *
 from gemini import *
 
@@ -11,30 +12,42 @@ def build_customer_profile(customer):
     avg_price = sum(p["price_paid"] for p in purchases) / len(purchases)
     avg_discount = sum(p["discount_rate"] for p in purchases) / len(purchases)
 
-    planning_ratio = sum(
-        1 for p in purchases if p["is_planning_product"]
-    ) / len(purchases)
-
+    planning_count = 0
     category_pref = defaultdict(int)
+
     for p in purchases:
-        category_pref[p["category"]] += 1
+        product = load_product(p["product_id"])
+
+        category = product.get("category")
+        if category:
+            category_pref[category] += 1
+
+        if product.get("is_planning_product"):
+            planning_count += 1
+
+    planning_ratio = planning_count / len(purchases)
 
     return {
         "avg_price_paid": avg_price,
         "avg_discount_rate": avg_discount,
+
         "planning_liking": planning_ratio,
         "category_pref": dict(category_pref),
+
         "purchased_ids": set(p["product_id"] for p in purchases),
+
         "pick_list": customer.get("pick_list", []),
         "basket": customer.get("basket", []),
+
         "num_purchases": len(purchases)
     }
+
 
 # =========================
 # ✦ 고객과 유사 + 별점 높은 리뷰 3개 선택
 #   (연령 / 성별 / 카테고리 성향 기반)
 # =========================
-def pick_top_similar_reviews(product, customer, profile, top_k=3):
+def pick_top_similar_reviews(product, customer, profile, top_k=5):
     reviews = product.get("reviews", [])
     scored = []
 
@@ -65,7 +78,7 @@ def pick_top_similar_reviews(product, customer, profile, top_k=3):
 # =========================
 # 추천 후보 생성
 # =========================
-def recommend_products(customer_id, top_k=3):
+def recommend_products(customer_id, top_k=5):
     customer = load_customer(customer_id)
     brands = load_brands()
     profile = build_customer_profile(customer)
@@ -90,7 +103,14 @@ def recommend_products(customer_id, top_k=3):
             })
 
     results.sort(key=lambda x: x["score"], reverse=True)
-    return results[:top_k], customer, profile
+    # top_k 후보 풀 만들기
+    top_candidates = results[:top_k]
+
+    # 그중 하나 랜덤 선택
+    chosen = random.choice(top_candidates)
+
+    # 기존 인터페이스 유지 (리스트 형태로 반환)
+    return [chosen], customer, profile
 
 # =========================
 # 메인 실행
@@ -110,7 +130,7 @@ if __name__ == "__main__":
         print(f"  ▶ feature score (합=1): {d['feature_score']}")
         print(f"  ▶ review affinity (가중치=1): {d['review_affinity']['score']}")
         print(f"  ▶ 최종 점수 (0~2): {d['final_score']}")
-        print(f"  ▶ 유사 고객 리뷰 Top3:")
+        print(f"  ▶ 유사 고객 리뷰:")
         for rv in r["similar_reviews"]:
             print(f"    - {rv['review_text']} (★{rv['overall_rating']})")
         print("")

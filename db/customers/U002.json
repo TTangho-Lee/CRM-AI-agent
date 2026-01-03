@@ -10,37 +10,37 @@
     {
       "product_id": "P002",
       "price_original": 22000,
-      "discount_rate": ,
-      "price_paid": ,
-      "purchase_date": ""
+      "discount_rate": 0.1,
+      "price_paid": 19800,
+      "purchase_date": "2025-10-15"
     },
     {
       "product_id": "P010",
       "price_original": 36000,
-      "discount_rate": ,
-      "price_paid": ,
-      "purchase_date": ""
+      "discount_rate": 0.25,
+      "price_paid": 27000,
+      "purchase_date": "2025-11-02"
     },
     {
       "product_id": "P016",
       "price_original": 74000,
-      "discount_rate": ,
-      "price_paid": ,
-      "purchase_date": ""
+      "discount_rate": 0.3,
+      "price_paid": 51800,
+      "purchase_date": "2025-11-28"
     },
     {
       "product_id": "P018",
       "price_original": 50000,
-      "discount_rate": ,
-      "price_paid": ,
-      "purchase_date": ""
+      "discount_rate": 0.2,
+      "price_paid": 40000,
+      "purchase_date": "2025-12-05"
     },
     {
       "product_id": "P032",
       "price_original": 24000,
-      "discount_rate": ,
-      "price_paid": ,
-      "purchase_date": ""
+      "discount_rate": 0.15,
+      "price_paid": 20400,
+      "purchase_date": "2025-12-18"
     }
   ]
 }

@@ -4,67 +4,64 @@
   "age_group": "50대",
   "gender": "여성",
   "skin_features": ["극건성", "주름", "탄력없음", "웜톤"],
-  "pick_list": [
-    "P003", "P004", "P006", "P007",
-    "P019", "P020", "P024", "P025", "P033"
-  ],
-  "basket": ["P003", "P006", "P024"],
+  "pick_list": ["P003","P004","P006","P007","P019","P020","P024","P025","P033"],
+  "basket": ["P003","P006","P024"],
   "purchases": [
     {
       "product_id": "P003",
       "price_original": 78000,
-      "discount_rate": ,
-      "price_paid": ,
-      "purchase_date": ""
+      "discount_rate": 0.25,
+      "price_paid": 58500,
+      "purchase_date": "2025-09-14"
     },
     {
       "product_id": "P004",
       "price_original": 150000,
-      "discount_rate": ,
-      "price_paid": ,
-      "purchase_date": ""
+      "discount_rate": 0.3,
+      "price_paid": 105000,
+      "purchase_date": "2025-10-01"
     },
     {
       "product_id": "P006",
       "price_original": 55000,
-      "discount_rate": ,
-      "price_paid": ,
-      "purchase_date": ""
+      "discount_rate": 0.2,
+      "price_paid": 44000,
+      "purchase_date": "2025-10-20"
     },
     {
       "product_id": "P007",
       "price_original": 139000,
-      "discount_rate": ,
-      "price_paid": ,
-      "purchase_date": ""
+      "discount_rate": 0.35,
+      "price_paid": 90350,
+      "purchase_date": "2025-11-05"
     },
     {
       "product_id": "P019",
       "price_original": 74000,
-      "discount_rate": ,
-      "price_paid": ,
-      "purchase_date": ""
+      "discount_rate": 0.25,
+      "price_paid": 55500,
+      "purchase_date": "2025-11-18"
     },
     {
       "product_id": "P020",
       "price_original": 29000,
-      "discount_rate": ,
-      "price_paid": ,
-      "purchase_date": ""
+      "discount_rate": 0.1,
+      "price_paid": 26100,
+      "purchase_date": "2025-12-01"
     },
     {
       "product_id": "P024",
       "price_original": 117000,
-      "discount_rate": ,
-      "price_paid": ,
-      "purchase_date": ""
+      "discount_rate": 0.3,
+      "price_paid": 81900,
+      "purchase_date": "2025-12-10"
     },
     {
       "product_id": "P033",
       "price_original": 13900,
-      "discount_rate": ,
-      "price_paid": ,
-      "purchase_date": ""
+      "discount_rate": 0.2,
+      "price_paid": 11120,
+      "purchase_date": "2025-12-22"
     }
   ]
 }

@@ -4,50 +4,50 @@
   "age_group": "30대",
   "gender": "여성",
   "skin_features": ["건성", "탄력없음", "주름", "웜톤"],
-  "pick_list": ["P014", "P023", "P029", "P030", "P034"],
-  "basket": ["P034", "P029"],
+  "pick_list": ["P014","P023","P029","P030","P034"],
+  "basket": ["P034","P029"],
   "purchases": [
     {
       "product_id": "P014",
       "price_original": 16000,
-      "discount_rate": ,
-      "price_paid": ,
-      "purchase_date": ""
+      "discount_rate": 0.1,
+      "price_paid": 14400,
+      "purchase_date": "2025-10-22"
     },
     {
       "product_id": "P023",
       "price_original": 42000,
-      "discount_rate": ,
-      "price_paid": ,
-      "purchase_date": ""
+      "discount_rate": 0.2,
+      "price_paid": 33600,
+      "purchase_date": "2025-11-04"
     },
     {
       "product_id": "P029",
       "price_original": 22000,
-      "discount_rate": ,
-      "price_paid": ,
-      "purchase_date": ""
+      "discount_rate": 0.15,
+      "price_paid": 18700,
+      "purchase_date": "2025-11-25"
     },
     {
       "product_id": "P030",
       "price_original": 32000,
-      "discount_rate": ,
-      "price_paid": ,
-      "purchase_date": ""
+      "discount_rate": 0.25,
+      "price_paid": 24000,
+      "purchase_date": "2025-12-02"
     },
     {
       "product_id": "P034",
       "price_original": 33000,
-      "discount_rate": ,
-      "price_paid": ,
-      "purchase_date": ""
+      "discount_rate": 0.1,
+      "price_paid": 29700,
+      "purchase_date": "2025-12-12"
     },
     {
       "product_id": "P029",
       "price_original": 22000,
-      "discount_rate": ,
-      "price_paid": ,
-      "purchase_date": ""
+      "discount_rate": 0.2,
+      "price_paid": 17600,
+      "purchase_date": "2025-12-27"
     }
   ]
 }

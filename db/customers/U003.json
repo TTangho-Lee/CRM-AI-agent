@@ -10,9 +10,9 @@
     {
       "product_id": "P029",
       "price_original": 22000,
-      "discount_rate": ,
-      "price_paid": ,
-      "purchase_date": ""
+      "discount_rate": 0.1,
+      "price_paid": 19800,
+      "purchase_date": "2025-12-08"
     }
   ]
 }
