@@ -1,0 +1,19 @@
+{
+  "product_id": "P033",
+  "product_name": "히알루론 모이스춰 수분크림 100ml",
+  "brand_id": "B007",
+  "tags": [
+    "히알루론산",
+    "수분크림",
+    "일리윤",
+    "수분공급",
+    "피부장벽",
+    "순한크림",
+    "데일리크림"
+  ],
+  "feature_prompt_text": "1,000배 강력한 수분력의 히알루론산이 끈적임 없이 산뜻하게 수분을 채워주는 데일리 수분 크림",
+  "is_planning_product": false,
+  "price_original": 13900,
+  "discount_rate": 0.35,
+  "price_current": 8900
+}

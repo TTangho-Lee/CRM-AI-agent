@@ -107,21 +107,16 @@ RATING_KEYS = ["제형", "지속력", "발색감","피부톤"]
 TARGET_PRODUCT_NAME = "올리브 비타민 E 리얼 클렌징 티슈 30매"
 RATING_KEYS = ["세정력", "촉촉함", "민감성"]
 
+TARGET_PRODUCT_NAME = "히알루론 모이스춰 수분크림 100ml"
+RATING_KEYS = ["용량", "민감성", "향기"]
+
+TARGET_PRODUCT_NAME = "에어리매트 틴트 3.8g"
+RATING_KEYS = ["제형", "지속력", "발색감","피부톤"]
+
+TARGET_PRODUCT_NAME = "라이트 피팅 파운데이션 SPF20PA++ 30ml"
+RATING_KEYS = ["커버력", "지속력", "피부 표현", "피부톤"]
+
 '''
-
-
-TARGET_PRODUCT_NAME = "리얼 아이 팔레트"
-RATING_KEYS = ["발색감", "지속력", "사용감"]
-
-
-
-
-
-
-
-
-
-
 
 
 

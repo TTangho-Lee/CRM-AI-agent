@@ -1,0 +1,18 @@
+{
+  "product_id": "P023",
+  "product_name": "비벨벳 파운데이션 SPF22/PA++",
+  "brand_id": "B005",
+  "tags": [
+    "비벨벳",
+    "파운데이션",
+    "세미매트",
+    "커버력",
+    "지속력",
+    "에스쁘아"
+  ],
+  "feature_prompt_text": "얇고 가볍게 발리면서도 모공과 잡티를 완벽하게 커버하고, 오랜 시간 무너짐 없이 예쁜 세미 매트 피부를 유지해주는 파운데이션",
+  "is_planning_product": false,
+  "price_original": 42000,
+  "discount_rate": 0.15,
+  "price_current": 35700
+}

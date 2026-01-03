@@ -1,1 +1,22 @@
-{}
+{
+    "product_id": "P020",
+    "product_name": "라이트 피팅 파운데이션 SPF20/PA++ 30ml",
+    "brand_id": "B006",
+    "tags": [
+        "라이트 피팅 파운데이션",
+        "SPF20/PA++",
+        "30ml",
+        "21N 바닐라",
+        "17N 아이보리",
+        "23N 진저",
+        "커버력",
+        "지속력",
+        "밀착력",
+        "가벼운 사용감"
+    ],
+    "feature_prompt_text": "피부에 가볍게 밀착되어 결점을 자연스럽게 커버해주는 라이트 피팅 파운데이션. 얇고 고른 발림성으로 하루 종일 편안한 피부를 유지해줍니다.",
+    "is_planning_product": false,
+    "price_original": 29000,
+    "discount_rate": 0.2,
+    "price_current": 23200
+}

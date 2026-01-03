@@ -1,0 +1,20 @@
+{
+  "product_id": "P034",
+  "product_name": "젤 크림스킨 스페셜 기프트 세트 (본품 170ml+증정50ml)",
+  "brand_id": "B001",
+  "tags": [
+    "라네즈",
+    "젤크림스킨",
+    "수분토너",
+    "진정",
+    "보습",
+    "산뜻함",
+    "속보습",
+    "모공케어"
+  ],
+  "feature_prompt_text": "젤 제형의 보습력과 토너의 산뜻함을 동시에 담아 속보습과 유분 컨트롤을 도와주는 젤 크림 토너",
+  "is_planning_product": true,
+  "price_original": 33000,
+  "discount_rate": 0.28,
+  "price_current": 23760
+}

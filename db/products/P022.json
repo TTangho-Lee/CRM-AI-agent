@@ -1,0 +1,18 @@
+{
+  "product_id": "P022",
+  "product_name": "이지 블렌딩 컨실러 10g",
+  "brand_id": "B005",
+  "tags": [
+    "컨실러",
+    "잡티커버",
+    "이지블렌딩",
+    "에스쁘아",
+    "베이스메이크업",
+    "촉촉컨실러"
+  ],
+  "feature_prompt_text": "초보자도 쉽게 사용할 수 있는 이지 블렌딩 텍스처로, 피부 결점을 자연스럽게 커버해주며 들뜸 없이 밀착되는 컨실러",
+  "is_planning_product": false,
+  "price_original": 26000,
+  "discount_rate": 0.17,
+  "price_current": 21580
+}

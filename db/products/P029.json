@@ -1,0 +1,19 @@
+{
+  "product_id": "P029",
+  "product_name": "플레이 멀티 아이즈",
+  "brand_id": "B004",
+  "tags": [
+    "플레이멀티아이즈",
+    "멀티팔레트",
+    "에뛰드",
+    "아이섀도우",
+    "블러셔",
+    "하이라이터",
+    "쿨톤팔레트"
+  ],
+  "feature_prompt_text": "아이섀도우, 블러셔, 하이라이터까지 하나로 끝내는 활용도 높은 멀티 팔레트",
+  "is_planning_product": false,
+  "price_original": 22000,
+  "discount_rate": 0.3,
+  "price_current": 15400
+}

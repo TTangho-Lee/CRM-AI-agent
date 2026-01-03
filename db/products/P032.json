@@ -1,0 +1,18 @@
+{
+  "product_id": "P032",
+  "product_name": "노웨어 립스틱 바밍글로우 3g",
+  "brand_id": "B005",
+  "tags": [
+    "노웨어립스틱",
+    "바밍글로우",
+    "에스쁘아",
+    "립스틱",
+    "촉촉한립스틱",
+    "글로우립"
+  ],
+  "feature_prompt_text": "입술에 닿는 순간 부드럽게 녹아들어 맑고 투명한 광택을 선사하는 글로우 립스틱",
+  "is_planning_product": false,
+  "price_original": 24000,
+  "discount_rate": 0.25,
+  "price_current": 18000
+}

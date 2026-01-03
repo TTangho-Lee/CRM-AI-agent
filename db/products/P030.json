@@ -1,0 +1,19 @@
+{
+  "product_id": "P030",
+  "product_name": "리얼 아이 팔레트",
+  "brand_id": "B005",
+  "tags": [
+    "리얼아이팔레트",
+    "아이팔레트",
+    "에스쁘아",
+    "데일리메이크업",
+    "멀티팔레트",
+    "아이섀도우",
+    "비건인증완료"
+  ],
+  "feature_prompt_text": "버릴 색 없는 컬러 조합으로 아이 메이크업부터 치크, 쉐딩까지 가능한 멀티 유즈 아이 팔레트",
+  "is_planning_product": false,
+  "price_original": 32000,
+  "discount_rate": 0.15,
+  "price_current": 27200
+}

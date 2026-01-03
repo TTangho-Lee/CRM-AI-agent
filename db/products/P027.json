@@ -1,0 +1,18 @@
+{
+  "product_id": "P027",
+  "product_name": "픽싱틴트 4g",
+  "brand_id": "B004",
+  "tags": [
+    "픽싱틴트",
+    "안묻어나는틴트",
+    "매트틴트",
+    "에뛰드",
+    "지속력좋은틴트",
+    "마스크프루프"
+  ],
+  "feature_prompt_text": "물들 듯 편안하게 픽싱되어 마스크에 묻어남 걱정 없이 오랜 시간 지속되는 하이드로 매트 틴트",
+  "is_planning_product": false,
+  "price_original": 12000,
+  "discount_rate": 0.3,
+  "price_current": 8400
+}

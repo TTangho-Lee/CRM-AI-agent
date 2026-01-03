@@ -1,0 +1,18 @@
+{
+  "product_id": "P025",
+  "product_name": "순행클렌징오일 200ml",
+  "brand_id": "B002",
+  "tags": [
+    "순행클렌징오일",
+    "클렌징오일",
+    "설화수",
+    "마일드클렌징",
+    "딥클렌징",
+    "산뜻한오일"
+  ],
+  "feature_prompt_text": "산뜻한 사용감의 오일이 얼굴에 부드럽게 롤링되어 메이크업 잔여물과 노폐물을 없애주는 마일드한 클렌징 오일",
+  "is_planning_product": false,
+  "price_original": 47000,
+  "discount_rate": 0.1,
+  "price_current": 42300
+}

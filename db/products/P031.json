@@ -1,0 +1,18 @@
+{
+  "product_id": "P031",
+  "product_name": "[디즈니에디션] 아이 코어 팔레트 기획세트",
+  "brand_id": "B005",
+  "tags": [
+    "디즈니에디션",
+    "아이코어팔레트",
+    "에스쁘아",
+    "아이섀도우",
+    "기획세트",
+    "멀티팔레트"
+  ],
+  "feature_prompt_text": "각도에 따라 변하는 홀로그램 패키지와 데일리 음영부터 포인트 글리터까지 활용도 높은 컬러로 구성된 아이 팔레트 기획세트",
+  "is_planning_product": true,
+  "price_original": 36000,
+  "discount_rate": 0.35,
+  "price_current": 23400
+}
