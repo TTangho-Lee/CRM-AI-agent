@@ -1,0 +1,47 @@
+diff a/db/customers/U001.json b/db/customers/U001.json	(rejected hunks)
+@@ -9,30 +9,27 @@
+   "purchases": [
+     {
+       "product_id": "P011",
+-      "category": "",
+-      "is_planning_product": ,
+-      "price_original": ,
+-      "discount_rate": ,
+-      "price_paid": ,
+-      "purchase_date": ""
++      "is_planning_product": false,
++      "price_original": 9000,
++      "discount_rate": 0.3,
++      "price_paid": 6300,
++      "purchase_date": "2025-12-10"
+     },
+     {
+       "product_id": "P015",
+-      "category": "",
+-      "is_planning_product": ,
+-      "price_original": ,
+-      "discount_rate": ,
+-      "price_paid": ,
+-      "purchase_date": ""
++      "is_planning_product": false,
++      "price_original": 15000,
++      "discount_rate": 0.3,
++      "price_paid": 10500,
++      "purchase_date": "2025-11-25"
+     },
+     {
+       "product_id": "P028",
+-      "category": "",
+-      "is_planning_product": ,
+-      "price_original": ,
+-      "discount_rate": ,
+-      "price_paid": ,
+-      "purchase_date": ""
++      "is_planning_product": false,
++      "price_original": 8000,
++      "discount_rate": 0.0,
++      "price_paid": 8000,
++      "purchase_date": "2025-10-05"
+     }
+   ]
+ }
