@@ -1,7 +1,7 @@
 # =========================
 # Gemini REST API 설정
 # =========================
-GEMINI_API_KEY = ""
+GEMINI_API_KEY = "AIzaSyCqf6o_daUHUVEFYlQdCy7YAul00IvQRhA"
 GEMINI_ENDPOINT = (
     "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
     #"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent"
