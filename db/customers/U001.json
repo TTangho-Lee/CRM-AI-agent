@@ -1,6 +1,7 @@
 {
   "user_id": "U001",
   "user_name": "김민지",
+  "nationality": "KR",
   "age_group": "10대",
   "gender": "여성",
   "skin_features": ["지성", "트러블", "민감성", "쿨톤"],

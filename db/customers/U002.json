@@ -1,6 +1,7 @@
 {
   "user_id": "U002",
   "user_name": "이서윤",
+  "nationality": null,
   "age_group": "20대",
   "gender": "여성",
   "skin_features": ["복합성", "모공", "칙칙함", "웜톤"],

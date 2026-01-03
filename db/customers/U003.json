@@ -1,6 +1,7 @@
 {
   "user_id": "U003",
   "user_name": "박진우",
+  "nationality": "KR",
   "age_group": "30대",
   "gender": "남성",
   "skin_features": ["수분부족지성", "건조함", "트러블", "웜톤"],

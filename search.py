@@ -44,10 +44,10 @@ def build_customer_profile(customer):
 
 
 # =========================
-# ✦ 고객과 유사 + 별점 높은 리뷰 3개 선택
+# ✦ 고객과 유사 + 별점 높은 리뷰 k개 선택
 #   (연령 / 성별 / 카테고리 성향 기반)
 # =========================
-def pick_top_similar_reviews(product, customer, profile, top_k=5):
+def pick_top_similar_reviews(product, customer, profile, top_k=10):
     reviews = product.get("reviews", [])
     scored = []
 
@@ -116,7 +116,7 @@ def recommend_products(customer_id, top_k=5):
 # 메인 실행
 # =========================
 if __name__ == "__main__":
-    USER_ID = "U001"
+    USER_ID = "U006"
 
     reco, customer, profile = recommend_products(USER_ID)
     context = build_rag_context(reco)

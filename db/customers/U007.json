@@ -1,6 +1,7 @@
 {
   "user_id": "U007",
   "user_name": "Li Wei",
+  "nationality": "CN",
   "age_group": "30대",
   "gender": "여성",
   "skin_features": ["건성", "탄력없음", "주름", "웜톤"],

@@ -1,6 +1,7 @@
 {
   "user_id": "U005",
   "user_name": "Sarah",
+  "nationality": "US",
   "age_group": "20대",
   "gender": "여성",
   "skin_features": ["건성", "민감성", "칙칙함", "쿨톤"],

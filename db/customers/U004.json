@@ -1,6 +1,7 @@
 {
   "user_id": "U004",
   "user_name": "정혜숙",
+  "nationality": null,
   "age_group": "50대",
   "gender": "여성",
   "skin_features": ["극건성", "주름", "탄력없음", "웜톤"],
