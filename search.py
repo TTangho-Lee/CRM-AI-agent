@@ -1,13 +1,37 @@
 from collections import defaultdict
 import random
+import re
 from score_calculation import *
 from gemini import *
+
+# =========================
+# 언어 감지
+# =========================
+def detect_language(name):
+    if re.search("[\u4e00-\u9FFF]", name):
+        return "zh"
+    elif re.search("[a-zA-Z]", name):
+        return "en"
+    else:
+        return "ko"
 
 # =========================
 # 고객 성향 요약
 # =========================
 def build_customer_profile(customer):
     purchases = customer["purchases"]
+
+    if not purchases:
+        return {
+            "avg_price_paid": 0,
+            "avg_discount_rate": 0,
+            "planning_liking": 0,
+            "category_pref": {},
+            "purchased_ids": set(),
+            "pick_list": customer.get("pick_list", []),
+            "basket": customer.get("basket", []),
+            "num_purchases": 0
+        }
 
     avg_price = sum(p["price_paid"] for p in purchases) / len(purchases)
     avg_discount = sum(p["discount_rate"] for p in purchases) / len(purchases)
@@ -116,26 +140,35 @@ def recommend_products(customer_id, top_k=5):
 # 메인 실행
 # =========================
 if __name__ == "__main__":
-    USER_ID = "U001"
+    # 테스트할 사용자 ID 리스트 (U001: 한국어, U005, 6: 영어, U007: 중국어)
+    test_users = ["U006", "U007"]
 
-    reco, customer, profile = recommend_products(USER_ID)
-    context = build_rag_context(reco)
+    for USER_ID in test_users:
+        print(f"\n\n##########################################################")
+        print(f"Processing User: {USER_ID}")
+        print(f"##########################################################\n")
 
-    print("\n=== 🔎 추천 제품 점수 분석 ===\n")
-    for r in reco:
-        p = r["product"]
-        d = r["details"]
+        reco, customer, profile = recommend_products(USER_ID)
+        context = build_rag_context(reco)
 
-        print(f"- {p['product_name']}")
-        print(f"  ▶ feature score (합=1): {d['feature_score']}")
-        print(f"  ▶ review affinity (가중치=1): {d['review_affinity']['score']}")
-        print(f"  ▶ 최종 점수 (0~2): {d['final_score']}")
-        print(f"  ▶ 유사 고객 리뷰:")
-        for rv in r["similar_reviews"]:
-            print(f"    - {rv['review_text']} (★{rv['overall_rating']})")
-        print("")
+        lang = detect_language(customer["user_name"])
+        print(f"Detected Language for {customer['user_name']}: {lang}")
 
-    message = generate_marketing_message(context, customer)
+        print("\n=== 🔎 추천 제품 점수 분석 ===\n")
+        for r in reco:
+            p = r["product"]
+            d = r["details"]
 
-    print("\n=== 📨 생성된 CRM 개인화 메시지 ===\n")
-    print(message)
+            print(f"- {p['product_name']}")
+            print(f"  ▶ feature score (합=1): {d['feature_score']}")
+            print(f"  ▶ review affinity (가중치=1): {d['review_affinity']['score']}")
+            print(f"  ▶ 최종 점수 (0~2): {d['final_score']}")
+            print(f"  ▶ 유사 고객 리뷰:")
+            for rv in r["similar_reviews"]:
+                print(f"    - {rv['review_text']} (★{rv['overall_rating']})")
+            print("")
+
+        message = generate_marketing_message(context, customer, language=lang)
+
+        print("\n=== 📨 생성된 CRM 개인화 메시지 ===\n")
+        print(message)
