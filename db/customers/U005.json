@@ -1,29 +1,10 @@
 {
-    "user_id": "U005",
-    "user_name": "Sarah",
-    "age_group": "20대",
-    "gender": "여성",
-    "skin_features": ["건성", "민감성", "칙칙함", "쿨톤"],
-    "pick_list": ["P001", "P002", "P016"],
-    "basket": ["P001"],
-    "purchases": [
-      { 
-        "product_id": "P001",
-        "category": "클렌징",
-        "is_planning_product": true,
-        "price_original": 28000,
-        "discount_rate": 0.3,
-        "price_paid": 19600,
-        "purchase_date": "2024-11-12"
-      },
-      { 
-        "product_id": "P002",
-        "category": "클렌징",
-        "is_planning_product": true,
-        "price_original": 28000,
-        "discount_rate": 0.3,
-        "price_paid": 19600,
-        "purchase_date": "2024-11-12"
-      }
-    ]
-  }
+  "user_id": "U005",
+  "user_name": "Sarah",
+  "age_group": "20대",
+  "gender": "여성",
+  "skin_features": ["건성", "민감성", "칙칙함", "쿨톤"],
+  "pick_list": ["P001", "P002", "P016", "P018", "P032", "P035"],
+  "basket": ["P002"],
+  "purchases": []
+}

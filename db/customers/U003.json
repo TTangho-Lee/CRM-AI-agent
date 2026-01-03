@@ -1,20 +1,20 @@
 {
-    "user_id": "U003",
-    "user_name": "박진우",
-    "age_group": "30대",
-    "gender": "남성",
-    "skin_features": ["수분부족지성", "건조함", "트러블", "웜톤"],
-    "pick_list": ["P005"],
-    "basket": ["P005"],
-    "purchases": [
-      { 
-        "product_id": "P005",
-        "category": "클렌징",
-        "is_planning_product": true,
-        "price_original": 28000,
-        "discount_rate": 0.3,
-        "price_paid": 19600,
-        "purchase_date": "2024-11-12" 
-      }
-    ]
-  }
+  "user_id": "U003",
+  "user_name": "박진우",
+  "age_group": "30대",
+  "gender": "남성",
+  "skin_features": ["수분부족지성", "건조함", "트러블", "웜톤"],
+  "pick_list": ["P014", "P023", "P029", "P034"],
+  "basket": ["P014"],
+  "purchases": [
+    {
+      "product_id": "P029",
+      "category": "",
+      "is_planning_product": ,
+      "price_original": ,
+      "discount_rate": ,
+      "price_paid": ,
+      "purchase_date": ""
+    }
+  ]
+}

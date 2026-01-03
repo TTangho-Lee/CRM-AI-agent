@@ -1,10 +1,29 @@
 {
-    "user_id": "U006",
-    "user_name": "Jessica",
-    "age_group": "20대",
-    "gender": "여성",
-    "skin_features": ["복합성", "칙칙함", "건조함", "웜톤"],
-    "pick_list": ["P010", "P018"],
-    "basket": [],
-    "purchases": []
-  }
+  "user_id": "U006",
+  "user_name": "Jessica",
+  "age_group": "20대",
+  "gender": "여성",
+  "skin_features": ["복합성", "칙칙함", "건조함", "웜톤"],
+  "pick_list": ["P001", "P002", "P010", "P016", "P017", "P032", "P035"],
+  "basket": ["P010", "P017"],
+  "purchases": [
+    {
+      "product_id": "P001",
+      "category": "",
+      "is_planning_product": ,
+      "price_original": ,
+      "discount_rate": ,
+      "price_paid": ,
+      "purchase_date": ""
+    },
+    {
+      "product_id": "P032",
+      "category": "",
+      "is_planning_product": ,
+      "price_original": ,
+      "discount_rate": ,
+      "price_paid": ,
+      "purchase_date": ""
+    }
+  ]
+}

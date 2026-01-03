@@ -64,16 +64,55 @@ TARGET_PRODUCT_NAME = "[도넛립세럼] 글레이즈 크레이즈 틴티드 립
 RATING_KEYS = ["지속력", "유분기", "촉촉함"]
 
 
+
 TARGET_PRODUCT_NAME = "이지 블렌딩 컨실러 10g"
 RATING_KEYS = ["커버력", "지속력", "피부 표현", "피부톤"]
 
 TARGET_PRODUCT_NAME = "라이트 피팅 컨실러 다크서클 커버 7g"
 RATING_KEYS = ["커버력", "지속력", "피부 표현", "피부톤"]
 
+TARGET_PRODUCT_NAME = "젤 크림스킨 스페셜 기프트 세트 (본품 170ml+증정50ml)"
+RATING_KEYS = ["보습감", "향", "민감성"]
+
+TARGET_PRODUCT_NAME = "네오 쿠션 뮤이 더블 SPF42PA++ 15g2"
+RATING_KEYS = ["커버력", "지속력", "피부 표현", "피부톤"]
+
+TARGET_PRODUCT_NAME = "순행클렌징오일 200ml"
+RATING_KEYS = ["세정력", "촉촉함", "민감성"]
+
+TARGET_PRODUCT_NAME = "퍼펙팅 쿠션 에어리 트리플 (17N1호21N1호) SPF50+PA+++"
+RATING_KEYS = ["커버력", "지속력", "피부 표현", "피부톤"]
+
+TARGET_PRODUCT_NAME = "픽싱틴트 4g"
+RATING_KEYS = ["제형", "지속력", "발색감","피부톤"]
+
+TARGET_PRODUCT_NAME = "디어 달링 워터젤 틴트"
+RATING_KEYS = ["제형", "지속력", "발색감","피부톤"]
+
+TARGET_PRODUCT_NAME = "플레이 멀티 아이즈"
+RATING_KEYS = ["발색감", "지속력", "사용감"]
+
+TARGET_PRODUCT_NAME = "비벨벳 파운데이션 SPF22PA++"
+RATING_KEYS = ["커버력", "지속력", "피부 표현", "피부톤"]
+
+
 
 '''
-TARGET_PRODUCT_NAME = "슈퍼바이탈 기초 2종 세트 (150ml+150ml)"
-RATING_KEYS = ["보습감", "향", "민감성"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 def extract_overall_rating_from_filename(filename: str):
     m = re.search(r"별점([1-5])", filename)

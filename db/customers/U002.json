@@ -1,20 +1,56 @@
 {
-    "user_id": "U002",
-    "user_name": "이서윤",
-    "age_group": "20대",
-    "gender": "여성",
-    "skin_features": ["복합성", "모공", "칙칙함", "웜톤"],
-    "pick_list": ["P010", "P016", "P018"],
-    "basket": ["P010"],
-    "purchases": [
-      { 
-        "product_id": "P018",
-        "category": "클렌징",
-        "is_planning_product": true,
-        "price_original": 28000,
-        "discount_rate": 0.3,
-        "price_paid": 19600,
-        "purchase_date": "2024-11-12"
-     }
-    ]
-  }
+  "user_id": "U002",
+  "user_name": "이서윤",
+  "age_group": "20대",
+  "gender": "여성",
+  "skin_features": ["복합성", "모공", "칙칙함", "웜톤"],
+  "pick_list": ["P001", "P002", "P010", "P016", "P018", "P032", "P035"],
+  "basket": ["P001", "P035"],
+  "purchases": [
+    {
+      "product_id": "P002",
+      "category": "",
+      "is_planning_product": ,
+      "price_original": ,
+      "discount_rate": ,
+      "price_paid": ,
+      "purchase_date": ""
+    },
+    {
+      "product_id": "P010",
+      "category": "",
+      "is_planning_product": ,
+      "price_original": ,
+      "discount_rate": ,
+      "price_paid": ,
+      "purchase_date": ""
+    },
+    {
+      "product_id": "P016",
+      "category": "",
+      "is_planning_product": ,
+      "price_original": ,
+      "discount_rate": ,
+      "price_paid": ,
+      "purchase_date": ""
+    },
+    {
+      "product_id": "P018",
+      "category": "",
+      "is_planning_product": ,
+      "price_original": ,
+      "discount_rate": ,
+      "price_paid": ,
+      "purchase_date": ""
+    },
+    {
+      "product_id": "P032",
+      "category": "",
+      "is_planning_product": ,
+      "price_original": ,
+      "discount_rate": ,
+      "price_paid": ,
+      "purchase_date": ""
+    }
+  ]
+}
