@@ -4,71 +4,151 @@
     "brand_name": "라네즈 (LANEIGE)",
     "crm_tone": "트렌디하고 생기 넘치는 대화체",
     "crm_purpose": "수분/보습 효능 중심의 기능적 신뢰와 즐거운 뷰티 경험 제공",
-    "keywords": ["FEEL the GLOW", "수분 전문가", "글로벌 트렌드"],
-    "product_ids": ["P001", "P002"]
+    "keywords": [
+      "FEEL the GLOW",
+      "수분 전문가",
+      "글로벌 트렌드"
+    ],
+    "product_ids": [
+      "P001",
+      "P002",
+      "P034",
+      "P035"
+    ]
   },
   {
     "brand_id": "B002",
     "brand_name": "설화수 (Sulwhasoo)",
     "crm_tone": "우아하고 격조 있는 문어체",
     "crm_purpose": "독보적인 헤리티지와 예술적 가치 전달, 정성스러운 처방 강조",
-    "keywords": ["인삼의 생명력", "한국적 미학", "궁극의 안티에이징"],
-    "product_ids": ["P003", "P004"]
+    "keywords": [
+      "인삼의 생명력",
+      "한국적 미학",
+      "궁극의 안티에이징"
+    ],
+    "product_ids": [
+      "P003",
+      "P004",
+      "P024",
+      "P025"
+    ]
   },
   {
     "brand_id": "B003",
     "brand_name": "아이오페 (IOPE)",
     "crm_tone": "논리적이고 신뢰감 있는 전문가의 톤",
     "crm_purpose": "고기능성 성분(레티놀 등)의 과학적 근거와 피부 개선 결과 중심",
-    "keywords": ["랩 기반의 고기능성", "피부 진단", "효능 주의"],
-    "product_ids": ["P005", "P006", "P007"]
+    "keywords": [
+      "랩 기반의 고기능성",
+      "피부 진단",
+      "효능 주의"
+    ],
+    "product_ids": [
+      "P005",
+      "P006",
+      "P007"
+    ]
   },
   {
     "brand_id": "B004",
     "brand_name": "에뛰드 (ETUDE)",
     "crm_tone": "통통 튀고 발랄한 10대~20대 감성의 톤",
     "crm_purpose": "놀이처럼 즐거운 메이크업 루틴과 합리적인 가성비 제안",
-    "keywords": ["놀이문화", "갓성비", "스윗한 감성"],
-    "product_ids": ["P008", "P009"]
+    "keywords": [
+      "놀이문화",
+      "갓성비",
+      "스윗한 감성"
+    ],
+    "product_ids": [
+      "P008",
+      "P009",
+      "P027",
+      "P028",
+      "P029"
+    ]
   },
   {
     "brand_id": "B005",
     "brand_name": "에스쁘아 (espoir)",
     "crm_tone": "전문 메이크업 아티스트처럼 시크하고 감각적인 톤",
     "crm_purpose": "퍼스널 컬러와 리얼 텍스처를 통한 개성 있는 스타일링 제안",
-    "keywords": ["리얼 뷰티", "메이크업 크리에이터", "전문적 색조"],
-    "product_ids": ["P010"]
+    "keywords": [
+      "리얼 뷰티",
+      "메이크업 크리에이터",
+      "전문적 색조"
+    ],
+    "product_ids": [
+      "P010",
+      "P022",
+      "P023",
+      "P030",
+      "P031",
+      "P032"
+    ]
   },
   {
     "brand_id": "B006",
     "brand_name": "이니스프리 (innisfree)",
     "crm_tone": "활동적이고 친근하며 일상적인 말투",
     "crm_purpose": "자연의 에너지와 클린 뷰티 가치를 담은 생활 밀착형 케어",
-    "keywords": ["섬의 에너지", "액티브 나이브", "클린 뷰티"],
-    "product_ids": ["P011"]
+    "keywords": [
+      "섬의 에너지",
+      "액티브 나이브",
+      "클린 뷰티"
+    ],
+    "product_ids": [
+      "P011",
+      "P019",
+      "P020",
+      "P021",
+      "P026"
+    ]
   },
   {
     "brand_id": "B007",
     "brand_name": "일리윤 (illiyoon)",
     "crm_tone": "따뜻하고 자상한 가족같은 톤",
     "crm_purpose": "저자극 장벽 케어와 온 가족이 믿고 쓰는 안심 성분 강조",
-    "keywords": ["피부 장벽", "저자극", "온가족 안심"],
-    "product_ids": ["P012", "P013"]
+    "keywords": [
+      "피부 장벽",
+      "저자극",
+      "온가족 안심"
+    ],
+    "product_ids": [
+      "P012",
+      "P013",
+      "P033"
+    ]
   },
   {
     "brand_id": "B008",
     "brand_name": "한율 (HANYUL)",
     "crm_tone": "편안하고 정감 있는 자연적인 톤",
     "crm_purpose": "한국의 이로운 원료와 전해 내려오는 지혜를 통한 마음의 휴식",
-    "keywords": ["한국의 자연", "원료의 힘", "마음의 평온"],
-    "product_ids": ["P014", "P015"]
+    "keywords": [
+      "한국의 자연",
+      "원료의 힘",
+      "마음의 평온"
+    ],
+    "product_ids": [
+      "P014",
+      "P015"
+    ]
   },
   {
     "brand_id": "B009",
     "brand_name": "헤라 (HERA)",
     "crm_tone": "당당하고 현대적인 도시 여성의 톤",
     "crm_purpose": "서울리안의 감각적인 스타일과 본연의 아름다움을 살리는 럭셔리 메이크업",
-    "keywords": ["HERE. NOW. MYSELF", "컨템포러리 럭셔리", "서울 뷰티"],
-    "product_ids": ["P016", "P017", "P018"]
+    "keywords": [
+      "HERE. NOW. MYSELF",
+      "컨템포러리 럭셔리",
+      "서울 뷰티"
+    ],
+    "product_ids": [
+      "P016",
+      "P017",
+      "P018"
+    ]
   }
 ]
