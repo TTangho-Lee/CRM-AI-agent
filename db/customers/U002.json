@@ -4,15 +4,17 @@
     "age_group": "20대",
     "gender": "여성",
     "skin_features": ["복합성", "모공", "칙칙함", "웜톤"],
-    "pick_list": ["P201"],
-    "basket": [],
+    "pick_list": ["P010", "P016", "P018"],
+    "basket": ["P010"],
     "purchases": [
-      {
-        "product_id": "P203",
-        "category": "메이크업",
-        "product_name": "헤라 블랙 쿠션",
-        "price_paid": 61200,
-        "purchase_date": "2025-12-15"
-      }
+      { 
+        "product_id": "P018",
+        "category": "클렌징",
+        "is_planning_product": true,
+        "price_original": 28000,
+        "discount_rate": 0.3,
+        "price_paid": 19600,
+        "purchase_date": "2024-11-12"
+     }
     ]
   }
