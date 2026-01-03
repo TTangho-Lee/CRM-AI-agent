@@ -4,15 +4,7 @@
     "age_group": "20대",
     "gender": "여성",
     "skin_features": ["복합성", "칙칙함", "건조함", "웜톤"],
-    "pick_list": ["P601"],
+    "pick_list": ["P010", "P018"],
     "basket": [],
-    "purchases": [
-      {
-        "product_id": "P602",
-        "category": "스킨케어",
-        "product_name": "라네즈 워터뱅크 크림",
-        "price_paid": 33600,
-        "purchase_date": "2025-12-12"
-      }
-    ]
+    "purchases": []
   }

@@ -4,15 +4,26 @@
     "age_group": "50대",
     "gender": "여성",
     "skin_features": ["극건성", "주름", "탄력없음", "웜톤"],
-    "pick_list": ["P401"],
-    "basket": ["P402"],
+    "pick_list": ["P003", "P004", "P006", "P007"],
+    "basket": ["P003"],
     "purchases": [
-      {
-        "product_id": "P404",
-        "category": "스킨케어",
-        "product_name": "설화수 윤조에센스 세트",
-        "price_paid": 119000,
-        "purchase_date": "2025-11-28"
+      { 
+        "product_id": "P004",
+        "category": "클렌징",
+        "is_planning_product": true,
+        "price_original": 28000,
+        "discount_rate": 0.3,
+        "price_paid": 19600,
+        "purchase_date": "2024-11-12"
+      },
+      { 
+        "product_id": "P003",
+        "category": "클렌징",
+        "is_planning_product": true,
+        "price_original": 28000,
+        "discount_rate": 0.3,
+        "price_paid": 19600,
+        "purchase_date": "2024-11-12"
       }
     ]
   }
