@@ -9,6 +9,19 @@ from gemini import *
 def build_customer_profile(customer):
     purchases = customer["purchases"]
 
+    # 구매 이력이 없는 경우 기본값 반환
+    if not purchases:
+        return {
+            "avg_price_paid": 0,
+            "avg_discount_rate": 0,
+            "planning_liking": 0,
+            "category_pref": {},
+            "purchased_ids": set(),
+            "pick_list": customer.get("pick_list", []),
+            "basket": customer.get("basket", []),
+            "num_purchases": 0
+        }
+    
     avg_price = sum(p["price_paid"] for p in purchases) / len(purchases)
     avg_discount = sum(p["discount_rate"] for p in purchases) / len(purchases)
 
@@ -116,7 +129,7 @@ def recommend_products(customer_id, top_k=5):
 # 메인 실행
 # =========================
 if __name__ == "__main__":
-    USER_ID = "U007"
+    USER_ID = "U005"
 
     reco, customer, profile = recommend_products(USER_ID)
     context = build_rag_context(reco)
