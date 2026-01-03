@@ -1,32 +1,11 @@
 {
   "product_id": "P001",
-  "product_name": "라네즈 워터뱅크 블루 히알루로닉 클렌징 오일",
+  "product_name": "[도넛립세럼] 글레이즈 크레이즈 틴티드 립 세럼 (8종) 12g",
   "brand_id": "B001",
-
-  "tags": ["클렌징", "저자극", "딥클렌징"],
-  "feature_prompt_text": "메이크업을 자극 없이 부드럽게 녹여내는 촉촉한 저자극 클렌징 오일",
-
-  "is_planning_product": true,
-
-  ==================================
-  "hwahae": {
-    "positive": { "가벼운": 6534, "트러블안생기는": 5369 },
-    "negative": { "흘러내리는": 1071, "지속력안좋은": 489 }
-  },
-
-  "reviews": [
-    {
-      "overall_rating": 4,
-      "age_group": "30대",
-      "gender": "여성",
-      "skin_features": ["복합성", "민감성"],
-      "ratings_norm": { "세정력": "good", "촉촉함": "good" },
-      "review_text": "부드럽게 닦이고 자극이 없어요"
-    }
-  ],
-  ==================================
-
-  "price_original": 28000,
-  "discount_rate": 0.3,
-  "price_current": 19600
+  "tags": ["글레이즈", "립세럼", "도넛립", "고광택", "틴티드립"],
+  "feature_prompt_text": "도넛 글레이즈를 입힌 듯 탱글하고 맑은 광택이 24시간 지속되며, 바를수록 차오르는 플럼핑 효과와 보습력을 선사하는 틴티드 립 세럼",
+  "is_planning_product": false,
+  "price_original": 22000,
+  "discount_rate": 0.15,
+  "price_current": 18700
 }

@@ -1,0 +1,11 @@
+{
+  "product_id": "P009",
+  "product_name": "왓츠 인 마이 아이즈",
+  "brand_id": "B004",
+  "tags": ["아이섀도우", "싱글섀도우", "에뛰드", "발색", "지속력", "가루날림없는", "귀여운패키지"],
+  "feature_prompt_text": "나만의 무드를 담은 싱글 아이섀도우. 가루 날림 없이 부드럽게 밀착되며, 보이는 컬러 그대로 선명하게 발색됩니다. 다양한 컬러와 텍스처로 데일리 메이크업부터 포인트 메이크업까지 연출 가능합니다.",
+  "is_planning_product": false,
+  "price_original": 6000,
+  "discount_rate": 0.10,
+  "price_current": 5400
+}

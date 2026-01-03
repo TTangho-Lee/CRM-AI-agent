@@ -1,0 +1,11 @@
+{
+  "product_id": "P010",
+  "product_name": "아이 코어 팔레트 9g",
+  "brand_id": "B005",
+  "tags": ["아이팔레트", "12구팔레트", "에스쁘아", "데일리메이크업", "글리터", "음영메이크업", "멀티팔레트"],
+  "feature_prompt_text": "버릴 색 없는 12구 아이 팔레트. 베이스부터 음영, 포인트, 글리터까지 다양한 텍스처와 컬러로 구성되어 데일리 메이크업부터 화려한 룩까지 연출 가능합니다. 가루 날림 없이 밀착되며 맑은 발색을 자랑합니다.",
+  "is_planning_product": false,
+  "price_original": 36000,
+  "discount_rate": 0.35,
+  "price_current": 23400
+}

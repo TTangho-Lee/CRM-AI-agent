@@ -1,0 +1,11 @@
+{
+  "product_id": "P008",
+  "product_name": "드로잉 아이 브로우 0.25g",
+  "brand_id": "B004",
+  "tags": ["아이브로우", "펜슬", "자연스러운", "발림성", "에뛰드", "드로잉"],
+  "feature_prompt_text": "자연스러운 눈썹 연출에 최적화된 아이브로우 펜슬. 뭉침 없이 부드럽게 발리며, 초보자도 쉽게 원하는 눈썹 모양을 그릴 수 있습니다. 다양한 컬러로 헤어 톤에 맞춰 선택 가능합니다.",
+  "is_planning_product": false,
+  "price_original": 4000,
+  "discount_rate": 0.15,
+  "price_current": 3400
+}

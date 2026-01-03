@@ -1,0 +1,11 @@
+{
+  "product_id": "P005",
+  "product_name": "맨 올데이 퍼펙트 올인원 120ml",
+  "brand_id": "B003",
+  "tags": ["올인원", "남성", "보습", "진정", "피지조절", "아이오페", "맨"],
+  "feature_prompt_text": "칙칙하고 번들거리는 남성 피부를 위한 바이오 올인원 플루이드. 스킨, 로션, 에센스 기능을 하나로 담아 간편하게 케어할 수 있습니다. 끈적임 없이 산뜻하게 흡수되며, 지친 피부를 진정시키고 활력을 부여합니다.",
+  "is_planning_product": false,
+  "price_original": 38000,
+  "discount_rate": 0.25,
+  "price_current": 28500
+}

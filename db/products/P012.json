@@ -1,0 +1,11 @@
+{
+  "product_id": "P012",
+  "product_name": "NEW [대용량] 세라마이드 아토 로션 564ml",
+  "brand_id": "B007",
+  "tags": ["바디로션", "대용량", "세라마이드", "저자극", "온가족", "일리윤", "보습"],
+  "feature_prompt_text": "민감한 피부를 위한 저자극 고보습 로션. 세라마이드 성분이 피부 장벽을 강화하고 깊은 보습을 선사합니다. 끈적임 없이 산뜻하게 흡수되어 온 가족이 함께 사용하기 좋습니다. 넉넉한 대용량으로 얼굴부터 바디까지 케어하세요.",
+  "is_planning_product": false,
+  "price_original": 26200,
+  "discount_rate": 0.30,
+  "price_current": 18300
+}

@@ -1,0 +1,11 @@
+{
+  "product_id": "P006",
+  "product_name": "비타민C 엑스퍼트 25% 항산화 토닝 앰플 23ml",
+  "brand_id": "B003",
+  "tags": ["비타민C", "항산화", "미백", "기미케어", "앰플", "아이오페", "토닝"],
+  "feature_prompt_text": "순수 비타민C 25%를 함유한 고강도 항산화 앰플. 칙칙한 피부 톤을 밝혀주고 기미와 잡티를 케어하여 투명하고 탄력 있는 피부로 가꿔줍니다. 끈적임 없이 흡수되며 피부에 생기를 부여합니다.",
+  "is_planning_product": false,
+  "price_original": 55000,
+  "discount_rate": 0.23,
+  "price_current": 42350
+}

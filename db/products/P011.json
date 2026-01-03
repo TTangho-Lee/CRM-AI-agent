@@ -1,0 +1,11 @@
+{
+  "product_id": "P011",
+  "product_name": "노세범 미네랄 파우더 5g",
+  "brand_id": "B006",
+  "tags": ["파우더", "노세범", "기름종이", "보송보송", "이니스프리", "유분컨트롤", "국민파우더"],
+  "feature_prompt_text": "번들거리는 유분을 잡아주어 하루 종일 보송보송한 피부를 유지해주는 국민 파우더. 얼굴뿐만 아니라 헤어, 바디 등 다양한 부위에 활용 가능한 멀티 아이템입니다. 작고 가벼워 휴대가 간편합니다.",
+  "is_planning_product": false,
+  "price_original": 9000,
+  "discount_rate": 0.30,
+  "price_current": 6300
+}
