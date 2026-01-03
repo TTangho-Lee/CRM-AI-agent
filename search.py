@@ -116,7 +116,7 @@ def recommend_products(customer_id, top_k=5):
 # 메인 실행
 # =========================
 if __name__ == "__main__":
-    USER_ID = "U006"
+    USER_ID = "U007"
 
     reco, customer, profile = recommend_products(USER_ID)
     context = build_rag_context(reco)
