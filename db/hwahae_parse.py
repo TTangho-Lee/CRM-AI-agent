@@ -122,3 +122,75 @@ if __name__ == "__main__":
         output_json_path="db/화해 json/자음유액 EX 125ml.json"
     )
     
+
+
+
+    parse_ai_review_summary(
+        txt_path="db/화해 txt/순행클렌징오일 200ml.txt",
+        output_json_path="db/화해 json/순행클렌징오일 200ml.json"
+    )
+    parse_ai_review_summary(
+        txt_path="db/화해 txt/퍼펙팅 쿠션 에어리 트리플 (17N1호21N1호) SPF50+PA+++.txt",
+        output_json_path="db/화해 json/퍼펙팅 쿠션 에어리 트리플 (17N1호21N1호) SPF50+PA+++.json"
+    )
+    parse_ai_review_summary(
+        txt_path="db/화해 txt/픽싱틴트 4g.txt",
+        output_json_path="db/화해 json/픽싱틴트 4g.json"
+    )
+    parse_ai_review_summary(
+        txt_path="db/화해 txt/디어 달링 워터젤 틴트.txt",
+        output_json_path="db/화해 json/디어 달링 워터젤 틴트.json"
+    )
+    parse_ai_review_summary(
+        txt_path="db/화해 txt/플레이 멀티 아이즈.txt",
+        output_json_path="db/화해 json/플레이 멀티 아이즈.json"
+    )
+    parse_ai_review_summary(
+        txt_path="db/화해 txt/비벨벳 파운데이션 SPF22PA++.txt",
+        output_json_path="db/화해 json/비벨벳 파운데이션 SPF22PA++.json"
+    )
+    parse_ai_review_summary(
+        txt_path="db/화해 txt/이지 블렌딩 컨실러 10g.txt",
+        output_json_path="db/화해 json/이지 블렌딩 컨실러 10g.json"
+    )
+    parse_ai_review_summary(
+        txt_path="db/화해 txt/리얼 아이 팔레트.txt",
+        output_json_path="db/화해 json/리얼 아이 팔레트.json"
+    )
+    parse_ai_review_summary(
+        txt_path="db/화해 txt/[디즈니에디션] 아이 코어 팔레트 기획세트.txt",
+        output_json_path="db/화해 json/[디즈니에디션] 아이 코어 팔레트 기획세트.json"
+    )
+    parse_ai_review_summary(
+        txt_path="db/화해 txt/노웨어 립스틱 바밍글로우 3g.txt",
+        output_json_path="db/화해 json/노웨어 립스틱 바밍글로우 3g.json"
+    )
+    parse_ai_review_summary(
+        txt_path="db/화해 txt/올리브 비타민 E 리얼 클렌징 티슈 30매.txt",
+        output_json_path="db/화해 json/올리브 비타민 E 리얼 클렌징 티슈 30매.json"
+    )
+    parse_ai_review_summary(
+        txt_path="db/화해 txt/라이트 피팅 파운데이션 SPF20PA++ 30ml.txt",
+        output_json_path="db/화해 json/라이트 피팅 파운데이션 SPF20PA++ 30ml.json"
+    )
+    parse_ai_review_summary(
+        txt_path="db/화해 txt/라이트 피팅 컨실러 다크서클 커버 7g.txt",
+        output_json_path="db/화해 json/라이트 피팅 컨실러 다크서클 커버 7g.json"
+    )
+    parse_ai_review_summary(
+        txt_path="db/화해 txt/에어리매트 틴트 3.8g.txt",
+        output_json_path="db/화해 json/에어리매트 틴트 3.8g.json"
+    )
+    parse_ai_review_summary(
+        txt_path="db/화해 txt/히알루론 모이스춰 수분크림 100ml.txt",
+        output_json_path="db/화해 json/히알루론 모이스춰 수분크림 100ml.json"
+    )
+    parse_ai_review_summary(
+        txt_path="db/화해 txt/젤 크림스킨 스페셜 기프트 세트 (본품 170ml+증정50ml).txt",
+        output_json_path="db/화해 json/젤 크림스킨 스페셜 기프트 세트 (본품 170ml+증정50ml).json"
+    )
+    parse_ai_review_summary(
+        txt_path="db/화해 txt/네오 쿠션 뮤이 더블 SPF42PA++ 15g2.txt",
+        output_json_path="db/화해 json/네오 쿠션 뮤이 더블 SPF42PA++ 15g2.json"
+    )
+    

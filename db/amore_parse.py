@@ -43,7 +43,7 @@ TARGET_PRODUCT_NAME = "드로잉 아이 브로우 0.25g"
 RATING_KEYS = ["발색감", "지속력", "사용감"]
 
 TARGET_PRODUCT_NAME = "슈퍼바이탈 기초 2종 세트 (150ml+150ml)"
-RATING_KEYS = []
+RATING_KEYS = ["보습감", "향", "민감성"]
 
 TARGET_PRODUCT_NAME = "비타민C 엑스퍼트25% 토닝앰플 23ml"
 RATING_KEYS = ["보습감", "향", "민감성"]
@@ -63,9 +63,17 @@ RATING_KEYS = ["지속력", "유분기", "촉촉함"]
 TARGET_PRODUCT_NAME = "[도넛립세럼] 글레이즈 크레이즈 틴티드 립 세럼 (8종) 12g"
 RATING_KEYS = ["지속력", "유분기", "촉촉함"]
 
+
+TARGET_PRODUCT_NAME = "이지 블렌딩 컨실러 10g"
+RATING_KEYS = ["커버력", "지속력", "피부 표현", "피부톤"]
+
+TARGET_PRODUCT_NAME = "라이트 피팅 컨실러 다크서클 커버 7g"
+RATING_KEYS = ["커버력", "지속력", "피부 표현", "피부톤"]
+
+
 '''
-TARGET_PRODUCT_NAME = "맨 올데이 퍼펙트 올인원 120ml"
-RATING_KEYS = ["민감성", "향", "보습감"]
+TARGET_PRODUCT_NAME = "슈퍼바이탈 기초 2종 세트 (150ml+150ml)"
+RATING_KEYS = ["보습감", "향", "민감성"]
 
 def extract_overall_rating_from_filename(filename: str):
     m = re.search(r"별점([1-5])", filename)
@@ -128,6 +136,11 @@ def parse_review_block(block: str, overall_rating: int):
             i += 2
         else:
             i += 1
+
+    if last_rating_value_idx == -1:
+        return None
+
+
 
 
     review_start = last_rating_value_idx + 1
