@@ -2,6 +2,7 @@ from collections import defaultdict
 import random
 from score_calculation import *
 from gemini import *
+import re
 
 # =========================
 # 고객 성향 요약
@@ -56,12 +57,24 @@ def build_customer_profile(customer):
     }
 
 
+def _normalize_text(s: str) -> str:
+    """
+    공백/개행/대소문자 차이를 제거하여
+    동일 문장으로 간주할 수 있게 정규화
+    """
+    if not s:
+        return ""
+    s = s.lower()
+    s = re.sub(r"\s+", " ", s)   # 연속 공백 → 1칸
+    return s.strip()
+
 # =========================
 # ✦ 고객과 유사 + 별점 높은 리뷰 k개 선택
 #   (연령 / 성별 / 카테고리 성향 기반)
 # =========================
 def pick_top_similar_reviews(product, customer, profile, top_k=10):
     reviews = product.get("reviews", [])
+    forbidden_terms = ["🤍🤍🤍"]
     scored = []
 
     for r in reviews:
@@ -85,8 +98,38 @@ def pick_top_similar_reviews(product, customer, profile, top_k=10):
             "rating": r.get("overall_rating", 0)
         })
 
-    ranked = sorted(scored, key=lambda x: (x["score"], x["rating"]), reverse=True)
-    return [x["review"] for x in ranked[:top_k]]
+    # 점수 + 평점 순 정렬
+    ranked = sorted(
+        scored,
+        key=lambda x: (x["score"], x["rating"]),
+        reverse=True
+    )
+
+    selected = []
+    seen_keys = set()   # 중복 검사용
+
+    for item in ranked:
+        review = item["review"]
+
+        text_norm = _normalize_text(review.get("review_text"))
+
+        # 🚫 금지어 포함 리뷰 제외
+        if any(term.lower() in text_norm for term in map(str.lower, forbidden_terms)):
+            continue
+
+        # 🔁 중복 제거
+        # review_id 우선 기준
+        key = review.get("review_id") or text_norm
+        if key in seen_keys:
+            continue
+        seen_keys.add(key)
+        selected.append(review)
+
+        # ▶️ K개 채워지면 종료
+        if len(selected) >= top_k:
+            break
+
+    return selected
 
 # =========================
 # 추천 후보 생성
