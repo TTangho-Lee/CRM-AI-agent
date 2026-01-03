@@ -95,9 +95,24 @@ RATING_KEYS = ["발색감", "지속력", "사용감"]
 TARGET_PRODUCT_NAME = "비벨벳 파운데이션 SPF22PA++"
 RATING_KEYS = ["커버력", "지속력", "피부 표현", "피부톤"]
 
+TARGET_PRODUCT_NAME = "리얼 아이 팔레트"
+RATING_KEYS = ["발색감", "지속력", "사용감"]
 
+TARGET_PRODUCT_NAME = "[디즈니에디션] 아이 코어 팔레트 기획세트"
+RATING_KEYS = ["발색감", "지속력", "사용감"]
+
+TARGET_PRODUCT_NAME = "노웨어 립스틱 바밍글로우 3g"
+RATING_KEYS = ["제형", "지속력", "발색감","피부톤"]
+
+TARGET_PRODUCT_NAME = "올리브 비타민 E 리얼 클렌징 티슈 30매"
+RATING_KEYS = ["세정력", "촉촉함", "민감성"]
 
 '''
+
+
+TARGET_PRODUCT_NAME = "리얼 아이 팔레트"
+RATING_KEYS = ["발색감", "지속력", "사용감"]
+
 
 
 
