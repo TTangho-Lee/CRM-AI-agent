@@ -39,34 +39,33 @@ RATING_KEYS = ["발색감", "지속력", "사용감"]
 TARGET_PRODUCT_NAME = "[2개이상구매시10%추가할인][NEW] 왓츠 인 마이 아이즈"
 RATING_KEYS = ["발색감", "지속력", "사용감"]
 
-TARGET_PRODUCT_NAME = ""
-RATING_KEYS = ["", "", ""]
+TARGET_PRODUCT_NAME = "드로잉 아이 브로우 0.25g"
+RATING_KEYS = ["발색감", "지속력", "사용감"]
 
-TARGET_PRODUCT_NAME = ""
-RATING_KEYS = ["", "", ""]
+TARGET_PRODUCT_NAME = "슈퍼바이탈 기초 2종 세트 (150ml+150ml)"
+RATING_KEYS = []
 
-TARGET_PRODUCT_NAME = ""
-RATING_KEYS = ["", "", ""]
+TARGET_PRODUCT_NAME = "비타민C 엑스퍼트25% 토닝앰플 23ml"
+RATING_KEYS = ["보습감", "향", "민감성"]
 
-TARGET_PRODUCT_NAME = ""
-RATING_KEYS = ["", "", ""]
+TARGET_PRODUCT_NAME = "맨 올데이 퍼펙트 올인원 120ml"
+RATING_KEYS = ["민감성", "향", "보습감"]
 
-TARGET_PRODUCT_NAME = ""
-RATING_KEYS = ["", "", ""]
+TARGET_PRODUCT_NAME = "자음2종 세트 (150ml+125ml)"
+RATING_KEYS = ["보습감", "향", "민감성"]
 
-TARGET_PRODUCT_NAME = ""
-RATING_KEYS = ["", "", ""]
+TARGET_PRODUCT_NAME = "자음유액 EX 125ml"
+RATING_KEYS = ["보습감", "향", "민감성"]
 
-TARGET_PRODUCT_NAME = ""
-RATING_KEYS = ["", "", ""]
+TARGET_PRODUCT_NAME = "립 슬리핑 마스크 EX 20g"
+RATING_KEYS = ["지속력", "유분기", "촉촉함"]
 
 TARGET_PRODUCT_NAME = "[도넛립세럼] 글레이즈 크레이즈 틴티드 립 세럼 (8종) 12g"
 RATING_KEYS = ["지속력", "유분기", "촉촉함"]
 
 '''
-
-TARGET_PRODUCT_NAME = "[2개이상구매시10%추가할인][NEW] 왓츠 인 마이 아이즈"
-RATING_KEYS = ["발색감", "지속력", "사용감"]
+TARGET_PRODUCT_NAME = "맨 올데이 퍼펙트 올인원 120ml"
+RATING_KEYS = ["민감성", "향", "보습감"]
 
 def extract_overall_rating_from_filename(filename: str):
     m = re.search(r"별점([1-5])", filename)
@@ -130,8 +129,6 @@ def parse_review_block(block: str, overall_rating: int):
         else:
             i += 1
 
-    if last_rating_value_idx == -1:
-        return None
 
     review_start = last_rating_value_idx + 1
 
