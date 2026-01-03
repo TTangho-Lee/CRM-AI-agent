@@ -9,18 +9,14 @@
   "purchases": [
     {
       "product_id": "P001",
-      "category": "",
-      "is_planning_product": ,
-      "price_original": ,
+      "price_original": 22000,
       "discount_rate": ,
       "price_paid": ,
       "purchase_date": ""
     },
     {
       "product_id": "P032",
-      "category": "",
-      "is_planning_product": ,
-      "price_original": ,
+      "price_original": 24000,
       "discount_rate": ,
       "price_paid": ,
       "purchase_date": ""

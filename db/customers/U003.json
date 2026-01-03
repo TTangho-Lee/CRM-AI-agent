@@ -9,9 +9,7 @@
   "purchases": [
     {
       "product_id": "P029",
-      "category": "",
-      "is_planning_product": ,
-      "price_original": ,
+      "price_original": 22000,
       "discount_rate": ,
       "price_paid": ,
       "purchase_date": ""

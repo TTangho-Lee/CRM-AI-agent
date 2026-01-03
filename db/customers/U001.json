@@ -9,27 +9,21 @@
   "purchases": [
     {
       "product_id": "P011",
-      "category": "",
-      "is_planning_product": ,
-      "price_original": ,
+      "price_original": 9000,
       "discount_rate": ,
       "price_paid": ,
       "purchase_date": ""
     },
     {
       "product_id": "P015",
-      "category": "",
-      "is_planning_product": ,
-      "price_original": ,
+      "price_original": 15000,
       "discount_rate": ,
       "price_paid": ,
       "purchase_date": ""
     },
     {
       "product_id": "P028",
-      "category": "",
-      "is_planning_product": ,
-      "price_original": ,
+      "price_original": 8000,
       "discount_rate": ,
       "price_paid": ,
       "purchase_date": ""

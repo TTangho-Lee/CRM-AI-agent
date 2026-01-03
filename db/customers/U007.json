@@ -9,54 +9,42 @@
   "purchases": [
     {
       "product_id": "P014",
-      "category": "",
-      "is_planning_product": ,
-      "price_original": ,
+      "price_original": 16000,
       "discount_rate": ,
       "price_paid": ,
       "purchase_date": ""
     },
     {
       "product_id": "P023",
-      "category": "",
-      "is_planning_product": ,
-      "price_original": ,
+      "price_original": 42000,
       "discount_rate": ,
       "price_paid": ,
       "purchase_date": ""
     },
     {
       "product_id": "P029",
-      "category": "",
-      "is_planning_product": ,
-      "price_original": ,
+      "price_original": 22000,
       "discount_rate": ,
       "price_paid": ,
       "purchase_date": ""
     },
     {
       "product_id": "P030",
-      "category": "",
-      "is_planning_product": ,
-      "price_original": ,
+      "price_original": 32000,
       "discount_rate": ,
       "price_paid": ,
       "purchase_date": ""
     },
     {
       "product_id": "P034",
-      "category": "",
-      "is_planning_product": ,
-      "price_original": ,
+      "price_original": 33000,
       "discount_rate": ,
       "price_paid": ,
       "purchase_date": ""
     },
     {
       "product_id": "P029",
-      "category": "",
-      "is_planning_product": ,
-      "price_original": ,
+      "price_original": 22000,
       "discount_rate": ,
       "price_paid": ,
       "purchase_date": ""
